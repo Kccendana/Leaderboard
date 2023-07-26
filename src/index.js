@@ -25,8 +25,8 @@ form.addEventListener('submit', async (event) => {
       score,
     };
     await addScore(scoreData);
-    name = '';
-    score = '';
+    document.querySelector('#leader-name').value = '';
+    document.querySelector('#leader-score').value = '';
   }
 });
 
