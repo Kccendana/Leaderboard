@@ -16,8 +16,8 @@ const displayLists = async () => {
 
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
-  let name = document.querySelector('#leader-name').value.trim();
-  let score = document.querySelector('#leader-score').value.trim();
+  const name = document.querySelector('#leader-name').value.trim();
+  const score = document.querySelector('#leader-score').value.trim();
 
   if (name !== '' && score !== '') {
     const scoreData = {
